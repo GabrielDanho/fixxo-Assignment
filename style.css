@@ -1,64 +1,25 @@
-.html, body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+::root {
+    --color-theme: #FF7373;
+    --color-dark: #222529;
+    --linear-gradient-dark: #E6E6E6;
+    --linear-gradient-light: #F5F5F5;
+
+    --max-width: 1680px
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
-    font-family:sans-serif;
-    font-weight: 600;
-    color: #0E153D;
 }
 
-
-/* top-menu */
-.top-menu {
-    background-color: #E6E6E6;
-    color: #0E153D;
-    height: 80px;
+a {
+    color: var(--color-theme);
+    text-decoration: none;
 }
-    .top-menu > .container {
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
-    .top-menu a {
-        color: #0E153D;
-        text-decoration: none;
-        margin: 0.7rem;
-    
-        
-    }
-
-    .top-menu a:hover {
-        color: #FF7373;
-    }
-
-    .top-menu .menu-icons a {
-        margin: 0.01rem;
-    }
-
-/* showcase */
-.showcase {
-    background-color: #E6E6E6;
+a:hover {
+    color: var(--color-theme);
+    text-decoration: underline;
 }
-    .showcase .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #0E153D;
-    }
-
-    .showcase .showcase-body {
-        font-size: rem;
-    }
-
-        .showcase .showcase-body h1 {
-            font-family: 'play' sans-serif;
-            font-size: 5rem;
-        }
-            .showcase .showcase-body h1 strong {
-                font-weight: 700;
-                color: #0E153D;
-            }
-
-     
