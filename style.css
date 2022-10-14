@@ -3,6 +3,8 @@
 :root {
     --color-white: #FFFFFF;
     --color-theme: #FF7373;
+    --color-gray: #BBBBBB;
+    --color-darkgray: #616365;
     --color-dark: #222529;
     --color-shadow: rgba(0, 0, 0, 0.06);
     --linear-gradient-dark: #E6E6E6;
@@ -49,7 +51,7 @@ a:hover {
     transition: all 0.2s ease-in-out;
 }
     .__btn-theme:hover {
-        color: var(--color-white);
+        color: var(--color-white)!important;
         background-color: var(--color-dark);
         text-decoration: none;
     }
@@ -128,7 +130,8 @@ header {
              position: relative;
         }
         .__navbar .__nav-icon-links a:hover {
-            color: var(--color-theme);
+            color: var(--color-white);
+            background-color: var(--color-dark);
             text-decoration: none;
         }
 
@@ -161,9 +164,119 @@ header {
         }
 
 
+.__featured-products {
+    margin-bottom: 60px;
+}
+
+    .__featured-products .container {
+        max-width: 1110px;
+    }
+
+    .card {
+        border: none;
+    }
+        .card img,
+        .card .img {
+            height: 210px;
+            width: 255px;
+            background-color: var(--linear-gradient-light);
+            position: relative;
+        }
+
+        .card .card-body {
+            text-align: center;
+        }
+
+        .card .card-body .card-category {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--color-darkgray);
+        }
+        .card .card-body .card-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .card .card-body .card-rating {
+            color: var(--color-theme);
+        }
+        .card .card-body .card-price {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .card .card-menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: none;
+        }
+            .card .card-menu a {
+                background-color: var(--color-white);
+                color: var(--color-dark);
+                width: 36px;
+                height: 36px;
+                margin-bottom: 15px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 6px 4px var(--color-shadow);
+                position: relative;
+            }
+            .card .card-menu a:hover {
+                color: var(--color-white);
+                background-color: var(--color-dark);
+                text-decoration: none;
+            }
+        .card:hover .card-menu {
+            display: block;
+        }
 
 
+.card .btn-card-theme {
+    position: absolute;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+.card:hover .btn-card-theme {
+    display: flex;
+}
 
+.__banners,
+.__flashsales-left,
+.__flashsales-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.__flashsales-box {
+    background-color: var(--color-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.__flashsales-title {
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-bottom: 40px;
+}
+
+.__flashsales {
+    width: 50%;
+}
+
+.__customer {
+    padding-top: 50px;
+    padding-left: 14rem;
+}
 
 
 
