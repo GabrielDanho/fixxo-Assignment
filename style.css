@@ -341,7 +341,7 @@ header {
     }
 
 
-    
+
     .contact-form form input {
         width: 100%;
         padding: 18px 20px;
@@ -358,6 +358,11 @@ header {
         border: 1px solid var(--color-light-gray);
         height: 140px;
         resize: none;
+    }
+
+    .contact-form form .error {
+        color: var(--color-theme);
+        border: 1px solid var(--color-theme);
     }
 
     .contact-form form .errorMessage {

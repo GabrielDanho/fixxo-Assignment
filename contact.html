@@ -57,17 +57,17 @@
    <section class="contact-form">
         <div class="container">
             <h2>Come in Contact with Us</h2>
-            <form>
+            <form onsubmit="submitForm(event)" novalidate>
                 <div>
-                    <input id="name" type="text" placeholder="Your Name" class="errorMessage">
+                    <input id="name" type="text" onkeyup="validate(event)" placeholder="Your Name">
                     <div id="nameErrorMessage" class="errorMessage"></div>
                 </div>
                 <div>
-                    <input id="email" type="email" placeholder="Your Mail">
+                    <input id="email" type="email" onkeyup="validate(event)" placeholder="Your Mail">
                     <div id="emailErrorMessage" class="errorMessage"></div>
                 </div>
                 <div class="textarea">
-                    <textarea id="comment" placeholder="Comments"></textarea>
+                    <textarea id="comment" onkeyup="validate(event)" placeholder="Comments"></textarea>
                     <div id="commentErrorMessage" class="errorMessage"></div>
                 </div>
                 <div>
